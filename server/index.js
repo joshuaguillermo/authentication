@@ -1,3 +1,5 @@
+// basic code for building express walang babaguhin sa port 5000
+
 const express = require('express');
 const volleyball = require('volleyball');
 //const bodyParser = require('body-parser');
@@ -14,7 +16,7 @@ app.get('/', (req, res) => {
         message: 'hello joshua'
     });
 });
-app.use('/auth', auth);
+app.use('/auth', auth); ///pag may request na pumasok dito pasok sya sa auth/index.js
 
 function notFound(req, res, next) {
     res.status(404);
