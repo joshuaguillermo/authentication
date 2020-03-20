@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs'); // encryption sa password
 const db = require('../db/connection.js'); // database connection
 const users = db.get('users'); // gagawa ng databse and ang pangalan ng variable is users
 
-users.createIndex('username', { unique: true });
+users.createIndex('username', { unique: true }); // Creates an index on the db and collection (will not create if already exists)
 
 const schema = Joi.object().keys({
     username: Joi.string().regex(/(^[a-zA-Z0-9_]*$)/).min(3).max(30).required(),
