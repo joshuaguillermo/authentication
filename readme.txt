@@ -6,3 +6,21 @@
 	npm install joi (username password authentication valid or not valid)
 	npm install monk (creating database)
 	install mongo and run mongo in c:\...
+	mongotron or robo mongo 3t <- application to use the database
+
+	client side
+	
+	npx @vue/cli create client   <- create a vue object
+	manually select features
+		babel
+		router
+		linter/formatter
+		
+		eslint + airbnb config
+		lint on save
+		
+		in package.json
+
+	bootswatch.com
+
+	Run: npm run lint -- --fix
