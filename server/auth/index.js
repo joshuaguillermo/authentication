@@ -39,6 +39,7 @@ router.post('/signup', (req, res, next) => { //papasok dito kapag localhost/auth
                         password: hashedPassword
                     };
                     users.insert(newUser).then(insertedUser => { // insert sa data yung json na newUser
+                        delete insertedUser.password;
                         res.json(insertedUser); // response sa console yung inserterUser
                     });
                 });
